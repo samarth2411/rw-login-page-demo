@@ -1,38 +1,185 @@
-.App {
-  text-align: center;
+.flex {
+  display: flex;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.illustration {
+  max-width: 30%;
+  height: 100vh;
+  background-color: rgba(38, 209, 212, 0.25);
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.sign-up-side {
+  max-width: 70%;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.image {
+  padding: 12rem 0 0 0;
+  display: flex;
+}
+
+.mob {
+  margin: 2rem 0 0 0 !important;
+  color: rgba(0, 0, 0, 0.70);
+  /* font-family: Poppins; */
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  letter-spacing: 0.2px;
+}
+
+.first {
   display: flex;
   flex-direction: column;
-  align-items: center;
+}
+
+.btn {
+  color: rgba(255, 255, 255, 0.75);
+  text-align: center;
+  /* font-family: Poppins; */
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: 0.24px;
+}
+
+.btn-1 {
+  width: 504px;
+  height: 55px;
+  border-radius: 15px;
+  background: rgba(0, 0, 0, 0.25);
+
+}
+
+.sixth {
+  margin-top: 1.5rem;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
 }
 
-.App-link {
-  color: #61dafb;
+.content {
+  padding: 8rem 0 0 15rem;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.fifth {
+  margin-top: 2rem;
+}
+
+.already-login {
+  color: rgba(0, 0, 0, 0.75);
+  text-align: center;
+  /* font-family: Poppins; */
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  letter-spacing: 0.2px;
+}
+
+.login {
+  color: #26D1D4;
+  text-align: center;
+  /* font-family: Poppins; */
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  letter-spacing: 0.2px;
+}
+
+.head {
+  /* margin: 0.5rem !important; */
+  color: #171717;
+  /* font-family: 'Poppins'; */
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 0.32px;
+}
+
+.third {
+  margin-top: 2rem;
+}
+
+.fourth {
+  margin-top: 2rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.terms {
+  color: rgba(0, 0, 0, 0.70);
+  /* font-family: Poppins; */
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  letter-spacing: 0.2px;
+}
+
+.form-control {
+  width: 460px;
+  padding: 15px 19px;
+  font-size: 1rem;
+  color: #475F7B;
+  border: 2px solid #949494;
+  border-radius: 15px;
+  -webkit-transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+  transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+}
+
+.form-control:focus {
+  color: #475F7B;
+  background-color: #FFF;
+  border-color: #5A8DEE;
+  outline: 0;
+  box-shadow: 0 3px 8px 0 rgb(0 0 0 / 10%);
+}
+
+@media only screen and (max-width: 1100px) {
+  .content {
+    padding: 8rem 0 0 7rem;
   }
-  to {
-    transform: rotate(360deg);
+}
+
+@media only screen and (max-width: 800px) {
+
+  .Outer {
+    flex-direction: column;
+  }
+
+  .illustration {
+    max-width: 100%;
+    height: auto;
+    background-color: white;
+  }
+  
+  .sign-up-side {
+    max-width: 100%;
+  }
+
+  .image {
+    padding: 0 !important;
+  }
+  
+}
+
+@media only screen and (max-width: 650px) {
+  .content {
+    padding: 0 0 2rem 2rem;
+  }
+
+  .terms {
+    font-size: 16px;
+  }
+
+  .form-control {
+    width: 400px;
+  }
+
+  .btn-1 {
+    width: 450px;
   }
 }
