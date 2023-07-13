@@ -2,10 +2,44 @@
   display: flex;
 }
 
-.illustration {
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins';
+}
+
+#light {
+  background: #FFF;
+}
+
+#dark {
+  background: radial-gradient(42.63% 42.67% at 50.00% 50.00%, rgba(5, 93, 112, 0.90) 0%, rgba(6, 91, 115, 0.00) 100%);
+  background: var(--radial-bg, radial-gradient(86.40% 84.04% at 47.40% 46.42%, rgba(28, 32, 54, 0.78) 0%, rgba(21, 24, 41, 0.36) 53.44%, rgba(15, 17, 29, 0.00) 100%), #02030C);
+}
+
+.seventh {
+  margin-top: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#light .illustration {
   max-width: 30%;
   height: 100vh;
   background-color: rgba(38, 209, 212, 0.25);
+}
+
+#dark .illustration {
+  max-width: 30%;
+  height: 100vh;
+  background: rgba(38, 209, 212, 0.12);
+  backdrop-filter: blur(2.799999952316284px);
+}
+
+#dark ::placeholder {
+  color: white;
 }
 
 .sign-up-side {
@@ -15,12 +49,25 @@
 .image {
   padding: 12rem 0 0 0;
   display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.mob {
+#light .mob {
   margin: 2rem 0 0 0 !important;
   color: rgba(0, 0, 0, 0.70);
-  /* font-family: Poppins; */
+  font-family: 'Poppins';
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  letter-spacing: 0.2px;
+}
+
+#dark .mob {
+  margin: 2rem 0 0 0 !important;
+  color: rgba(255, 255, 255, 0.85);
+  font-family: 'Poppins';
   font-size: 20px;
   font-style: normal;
   font-weight: 600;
@@ -33,10 +80,10 @@
   flex-direction: column;
 }
 
-.btn {
+#light .btn {
   color: rgba(255, 255, 255, 0.75);
   text-align: center;
-  /* font-family: Poppins; */
+  font-family: 'Poppins';
   font-size: 24px;
   font-style: normal;
   font-weight: 500;
@@ -44,12 +91,30 @@
   letter-spacing: 0.24px;
 }
 
-.btn-1 {
+#dark .btn {
+  color: rgba(0, 0, 0, 0.75);
+  text-align: center;
+  font-family: 'Poppins';
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: 0.24px;
+}
+
+#light .btn-1 {
   width: 504px;
   height: 55px;
   border-radius: 15px;
   background: rgba(0, 0, 0, 0.25);
 
+}
+
+#dark .btn-1 {
+  width: 504px;
+  height: 55px;
+  border-radius: 15px;
+  background: rgba(255, 255, 255, 0.50);
 }
 
 .sixth {
@@ -66,10 +131,22 @@
   margin-top: 2rem;
 }
 
-.already-login {
+#light .already-login {
   color: rgba(0, 0, 0, 0.75);
   text-align: center;
-  /* font-family: Poppins; */
+  font-family: 'Poppins' ;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  letter-spacing: 0.2px;
+}
+
+#dark .already-login {
+  color: rgba(255, 255, 255, 0.85);
+  text-align: center;
+
+  font-family: 'Poppins';
   font-size: 20px;
   font-style: normal;
   font-weight: 600;
@@ -80,7 +157,7 @@
 .login {
   color: #26D1D4;
   text-align: center;
-  /* font-family: Poppins; */
+  font-family: 'Poppins';
   font-size: 20px;
   font-style: normal;
   font-weight: 600;
@@ -88,10 +165,21 @@
   letter-spacing: 0.2px;
 }
 
-.head {
+#light .head {
   /* margin: 0.5rem !important; */
   color: #171717;
-  /* font-family: 'Poppins'; */
+  font-family: 'Poppins';
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 0.32px;
+}
+
+#dark .head {
+  color: #FFF;
+
+  font-family: 'Poppins';
   font-size: 32px;
   font-style: normal;
   font-weight: 700;
@@ -109,30 +197,72 @@
   flex-direction: column;
 }
 
-.terms {
-  color: rgba(0, 0, 0, 0.70);
-  /* font-family: Poppins; */
-  font-size: 20px;
+#light .terms {
+  color: rgba(0, 0, 0, 0.75);
+  font-family: 'Poppins';
+  font-size: 18px;
   font-style: normal;
-  font-weight: 600;
-  line-height: normal;
-  letter-spacing: 0.2px;
+  font-weight: 500;
+  line-height: 24px;
+  letter-spacing: 0.18px;
 }
 
-.form-control {
+#dark .terms {
+  color: rgba(255, 245, 245, 0.80);
+  font-family: 'Poppins';
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 24px;
+  letter-spacing: 0.18px;
+}
+
+#light .form-control {
+  background: none !important;
   width: 460px;
   padding: 15px 19px;
   font-size: 1rem;
   color: #475F7B;
   border: 2px solid #949494;
   border-radius: 15px;
-  -webkit-transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out;
-  transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+  /* -webkit-transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+  transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out; */
 }
 
-.form-control:focus {
+#dark .form-control {
+  background: none !important;
+  width: 460px;
+  padding: 15px 19px;
+  font-size: 1rem;
   color: #475F7B;
-  background-color: #FFF;
+  border: 2px solid #949494;
+  border-radius: 15px;
+  /* -webkit-transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+  transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out; */
+
+}
+
+.seventh label {
+  margin: 10px;
+}
+
+#light .seventh label {
+  color: black;
+}
+
+#dark .seventh label {
+  color: white;
+}
+
+#light .form-control:focus {
+  color: #475F7B;
+  border-color: #5A8DEE;
+  outline: 0;
+  box-shadow: 0 3px 8px 0 rgb(0 0 0 / 10%);
+}
+
+#dark .form-control:focus {
+  color: #475F7B;
   border-color: #5A8DEE;
   outline: 0;
   box-shadow: 0 3px 8px 0 rgb(0 0 0 / 10%);
@@ -150,20 +280,27 @@
     flex-direction: column;
   }
 
-  .illustration {
-    max-width: 100%;
-    height: auto;
+  #light .illustration {
+    max-width: 100% !important;
+    height: auto !important;
     background-color: white;
   }
-  
+
+  #dark .illustration {
+    max-width: 100% !important;
+    height: auto !important;
+    background-color: none;
+
+  }
+
   .sign-up-side {
-    max-width: 100%;
+    max-width: 100% !important;
   }
 
   .image {
     padding: 0 !important;
   }
-  
+
 }
 
 @media only screen and (max-width: 650px) {
@@ -172,14 +309,14 @@
   }
 
   .terms {
-    font-size: 16px;
+    font-size: 16px !important;
   }
 
   .form-control {
-    width: 400px;
+    width: 400px !important;
   }
 
   .btn-1 {
-    width: 450px;
+    width: 400px !important;
   }
 }
